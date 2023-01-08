@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=EB+Garamond:ital@1&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #faf3f0;
+}
+
+header {
+  padding: 0.75em 1em;
+}
+
+nav {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  margin: 0 auto;
+  max-width: 1320px;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  cursor: pointer;
+}
+
+.name {
+  font-size: 4em;
+  font-family: "Cormorant Garamond", serif;
+  background: #40643d;
+  color: white;
+  text-align: center;
+  padding: 0.2em 0.1em;
+  max-width: 406px;
+  width: 100%;
+  margin: 2em auto 0.5em auto;
+}
+
+.title {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 2em;
+  font-weight: 300;
+  max-width: 406px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.home {
+  border-bottom: 16px solid #40643d;
+  height: 100vh;
+}
+
+.parallax {
+  background-image: url("images/flowers-background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects-header {
+  font-size: 4em;
+  font-family: "Cormorant Garamond", serif;
+  color: #373534;
+  text-align: center;
+  margin: 1em auto;
+}
+
+.projects-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.project {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  border: 3px solid #373534;
+  font-size: 2em;
+  min-width: 700px;
+  padding: 1em 0.5em;
+}
+
+.align-right {
+  text-align: right;
+}
