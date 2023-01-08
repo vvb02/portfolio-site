@@ -26,6 +26,15 @@ nav ul {
   cursor: pointer;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: #373534;
+}
+
+nav ul li a:hover {
+  color: #40643d;
+}
+
 .name {
   font-size: 4em;
   font-family: "Cormorant Garamond", serif;
@@ -71,8 +80,10 @@ nav ul {
 
 .projects-container {
   width: 100%;
-  margin: 0 auto;
+  margin: 2em auto;
   max-width: 800px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project {
@@ -80,8 +91,22 @@ nav ul {
   font-weight: 500;
   border: 3px solid #373534;
   font-size: 2em;
-  min-width: 700px;
   padding: 1em 0.5em;
+  cursor: pointer;
+  margin: 0.5em 1em;
+  transition: 0.3s;
+}
+
+.project:hover {
+  background: #40643d;
+  border: 3px solid #40643d;
+  color: white;
+}
+
+@media (max-width: 840px) {
+  .project {
+    text-align: left;
+  }
 }
 
 .align-right {
