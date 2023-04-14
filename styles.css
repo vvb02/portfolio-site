@@ -109,10 +109,7 @@ nav ul li a:hover::before {
 }
 
 .projects-container {
-  grid-gap: 4rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(18rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-gap: 4rem;
   margin-top: 6rem;
@@ -121,17 +118,10 @@ nav ul li a:hover::before {
 
 .project-box {
   padding: 2rem;
-  display: -webkit-box;
   border: 1px solid #c3bbb2;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   height: 18rem;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
