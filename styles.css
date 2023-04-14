@@ -98,7 +98,8 @@ nav ul li a:hover::before {
 
 @media screen and (max-width: 600px) {
   #projects {
-    padding: 4em;
+    padding: 20px;
+    margin: 0 auto;
   }
 }
 .projects-header {
