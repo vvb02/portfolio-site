@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <title>Bilaine Vergeon</title>
   </head>
   <body>
     <header>
-      <nav class="lockout">
+      <nav>
         <ul>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Home</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
@@ -21,13 +29,71 @@
       <h1 class="name">Bilaine Vergeon</h1>
       <h2 class="title">Insert Title Here</h2>
     </section>
-    <section class="projects">
+    <section id="projects">
       <h2 class="projects-header">Projects</h2>
       <div class="projects-container">
-        <p class="project">Imaginary Website</p>
-        <p class="project align-right">Amazing Project</p>
-        <p class="project">Quiz Game</p>
+        <div class="project-box">
+          <div class="project-box__link">
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a
+              href="https://www.thewritingrevolution.org/zine/zine-summer22/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ion-icon name="open-outline"></ion-icon>
+            </a>
+          </div>
+          <div class="project-box__content">
+            <h3>The Writing Revolution Spring/Summer 2022 Zine</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+        <div class="project-box">
+          <div class="project-box__link">
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a
+              href="https://www.thewritingrevolution.org/about/twr-team/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ion-icon name="open-outline"></ion-icon>
+            </a>
+          </div>
+          <div class="project-box__content">
+            <h3>The Writing Revolution Team Page</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+        <div class="project-box">
+          <div class="project-box__link">
+            <a href="educonnect.html" target="_blank" rel="noopener noreferrer">
+              Case Study
+            </a>
+          </div>
+          <div class="project-box__content">
+            <h3>EduConnect</h3>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
+    <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>
