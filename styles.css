@@ -180,14 +180,6 @@ hr {
   text-align: right;
 }
 
-/* Footer */
-
-footer {
-  height: 100px;
-  width: 100%;
-  background: var(--main-color);
-}
-
 /* Project */
 
 .project-container {
@@ -215,16 +207,74 @@ footer {
 
 .project-description {
   text-align: center;
+  margin: 0 auto;
 }
 
 .project-info {
   display: flex;
   justify-content: space-around;
-  margin: 1em auto;
+  margin: 1em auto 4.5em auto;
   text-align: center;
-  flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+  .project-info {
+    flex-direction: column;
+  }
+}
+
+.project-container {
+  max-width: 750px;
 }
 
 .project-container h2 {
   color: var(--main-color);
+}
+
+.project-details-header {
+  text-align: center;
+  margin: 1.5em auto 1em auto;
+  font-size: 29px;
+}
+
+.project-details {
+  text-align: center;
+  margin: 1em auto;
+  padding-right: 1em;
+  padding-left: 1em;
+  font-size: 17px;
+}
+
+/* EduConnect Lo-fi images */
+
+.lofi-container {
+  max-width: 750px;
+}
+.lofi-images {
+  display: flex;
+}
+
+.lofi-images img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .lofi-images {
+    display: block;
+  }
+}
+
+/* Footer */
+
+footer {
+  height: 100px;
+  width: 100%;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
 }
